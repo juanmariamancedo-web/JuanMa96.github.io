@@ -29,11 +29,13 @@
     height: 2rem;
     justify-content: center;
     align-items: space-around;
+    background: var(--color-principal);
     z-index: var(--z-normal);
 }
 
 .header__isotipo{ 
     font-family: var(--font-isotipo);
+    color: var(--color-normal-letters);
     font-size: 1.5rem;
 }
 
@@ -70,6 +72,7 @@
      display: block;
      width: 95%;
      font-family: var(--font-current-family);
+     font-size: var(--font-size-normal);
      color: var(--color-cover);
      background-color: var(--color-letters-of-cover);
      border-radius: 10px;
@@ -80,6 +83,7 @@
 
 .article{ 
     display: flex;
+    background: var(--color-principal);
     flex-wrap: wrap;
     justify-content: space-around;
     margin-bottom: 3rem;
@@ -108,9 +112,9 @@
 
 .article__text{
     flex: 1 1 300px;
-    font-family: var(--font-current-family), Arial;
+    font-family: var(--font-current-family);
+    text-size: var(--font-size-normal);
     color: var(--color-normal-letters);
-    font-size: var(--font-size-normal);
     white-space: pre-line;
 }
 
@@ -118,11 +122,14 @@
     flex: 1 1 300px;
     font-family: var(--font-current-family);
     text-size: var(--font-size-normal);
+    color: var(--color-normal-letters);
 }
 
 .article__list > li{
-     padding-top: 1rem;
-     font-size: var(--font-size-normal);
+    padding-top: 1rem;     
+    font-family: var(--font-current-family);
+    text-size: var(--font-size-normal);
+    color: var(--color-normal-letters);
 }
 
 .article__img{
@@ -184,4 +191,10 @@
 .footer__link{
     color: var(--color-principal);
     font-size: var(--font-size-normal);
+}
+
+.header__isotipo{ 
+    font-family: var(--font-isotipo);
+    color: var(--color-secundary);
+    font-size: 1.5rem;
 }
