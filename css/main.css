@@ -162,21 +162,16 @@
 }
 
 .footer{
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    aling-items: center;
+    align-items: center;
     background: var(--color-letters-of-cover);
 }
 
 .footer__title{
-    text-align: center;
     font-family: var(--font-family-titles);
-    color: var(--color-secundary);
+    color: var(--color-secondary);
     font-size: 2rem;
     margin-bottom: 0;
 }    
@@ -184,13 +179,13 @@
 .footer__list{
     font-family: var(--font-current-family);
     text-size: var(--font-size-normal);
-    color: var(--color-secundary);
+    color: var(--color-secondary);
 }
 
 .footer__list > li{
      padding-top: 1rem;
      font-size: var(--font-size-normal);    
-     color: var(--color-secundary);
+     color: var(--color-secondary);
 }
 
 .footer__link{
