@@ -154,7 +154,11 @@
 }
 
 .footer{
-   background: var(--color-secondary);
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+   aling-items: center;
+   background: var(--color-letters-of-cover);
 }
 
 .footer__title{
@@ -168,14 +172,16 @@
 .footer_list{
     font-family: var(--font-current-family);
     text-size: var(--font-size-normal);
+    color: var(--color-secundary);
 }
 
 .footer_list > li{
      padding-top: 1rem;
-     font-size: var(--font-size-normal);
+     font-size: var(--font-size-normal);    
+     color: var(--color-secundary);
 }
 
 .footer__link{
-    color: var(--color-secondary);
+    color: var(--color-principal);
     font-size: var(--font-size-normal);
 }
