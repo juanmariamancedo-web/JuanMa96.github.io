@@ -1,0 +1,158 @@
+*{
+    box-sizing: border-box;
+    margin-top: 0;
+}
+
+:root{
+    --color-normal-letters: 000;
+    --color-letters-of-cover: #FFCA00;
+    --color-cover: #002A9D;
+    --color-principal: #fff;
+    --color-secondary: #0074E8;
+    --color-complementary: #FFCA00;
+
+    --z-back: -10;
+    --z-normal: 1;
+    --z-tooltip: 10;
+    --z-fixed: 100;
+    --z-modal: 1000;
+
+    --font-family-titles: 'Oswald';
+    --font-current-family: 'Open Sans';
+    --font-isotipo: 'Lacquer';
+
+    --font-size-normal: 14pt;
+}
+
+.header{
+    display: flex;
+    height: 2rem;
+    justify-content: center;
+    align-items: space-around;
+    z-index: var(--z-normal);
+}
+
+.header__isotipo{ 
+    font-family: var(--font-isotipo);
+    font-size: 1.5rem;
+}
+
+.main-content{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 66.65vw;
+    margin-bottom: 3rem;
+    background-color: var(--color-cover);
+    background-image: url(../img/portada.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    align-content: space-around;
+}
+
+.main-content__title{
+    font-family: var(--font-family-titles);
+    font-size: 2rem;
+    color: var(--color-letters-of-cover);
+    quotes: "¿" "?";
+}
+
+.main-content__title::before{
+    content: open-quote;
+}
+
+.main-content__title::after{
+    content: close-quote;
+}
+
+.main-content__call-to-action{
+     display: block;
+     width: 95%;
+     font-family: var(--font-current-family);
+     color: var(--color-cover);
+     background-color: var(--color-letters-of-cover);
+     border-radius: 10px;
+     text-decoration: none;
+     text-align: center;
+     
+}
+
+.article{ 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 3rem;
+}
+
+.article__title{
+    flex: 1 1 100%;
+    text-align: center;
+    font-family: var(--font-family-titles);
+    color: var(--color-normal-letters);
+    font-size: 2rem;
+    margin-bottom: 0;
+}
+
+.article__title--pregunta{
+    quotes: "¿" "?";
+}
+
+.article__title--pregunta::before{
+    content: open-quote;
+}
+
+.article__title--pregunta::after{
+    content: close-quote;
+}
+
+.article__text{
+    flex: 1 1 300px;
+    font-family: var(--font-current-family), Arial;
+    color: var(--color-normal-letters);
+    font-size: var(--font-size-normal);
+    white-space: pre-line;
+}
+
+.article__list{
+    flex: 1 1 300px;
+    font-family: var(--font-current-family);
+    text-size: var(--font-size-normal);
+}
+
+.article__list > li{
+     padding-top: 1rem;
+     font-size: var(--font-size-normal);
+}
+
+.article__img{
+    max-height: 300px;
+    height: auto;
+    object-fit: cover;
+}
+
+.article__call-to-action{
+     display: block;
+     width: 95%;
+     font-family: var(--font-current-family);
+     color: var(--color-cover);
+     font-size: var(--font-size-normal);
+     background-color: var(--color-letters-of-cover);
+     border-radius: 10px;
+     text-decoration: none;
+     text-align: center;
+}
+
+.article__link{
+    color: var(--color-secondary);
+    font-size: var(--font-size-normal);
+}
+
+.article___link[href^="https://instagram"]::before{
+    content: " ";
+    background: center / contain, var(--color-principal);
+}
+
+.footer{
+   background: var(--color-secondary);
+}
