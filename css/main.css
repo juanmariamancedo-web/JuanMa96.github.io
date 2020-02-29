@@ -153,6 +153,7 @@
 .article__link{
     color: var(--color-secondary);
     font-size: var(--font-size-normal);
+    text-decoration: none;
 }
 
 .article___link[href^="https://instagram"]::before{
@@ -191,9 +192,10 @@
 .footer__link{
     color: var(--color-principal);
     font-size: var(--font-size-normal);
+    text-decoration: none;
 }
 
-.header__isotipo{ 
+.footer__isotipo{ 
     font-family: var(--font-isotipo);
     color: var(--color-secundary);
     font-size: 1.5rem;
