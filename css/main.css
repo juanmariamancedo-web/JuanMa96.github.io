@@ -162,17 +162,21 @@
 }
 
 .footer{
-   display: flex;
-   flex-direction: column;
-   justify-content: space-around;
-   aling-items: center;
-   background: var(--color-letters-of-cover);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    aling-items: center;
+    background: var(--color-letters-of-cover);
 }
 
 .footer__title{
     text-align: center;
     font-family: var(--font-family-titles);
-    color: var(--color-normal-letters);
+    color: var(--color-secundary);
     font-size: 2rem;
     margin-bottom: 0;
 }    
