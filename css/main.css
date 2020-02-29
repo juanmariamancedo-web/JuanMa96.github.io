@@ -133,9 +133,10 @@
 }
 
 .article__img{
-    max-height: 300px;
+    width: 100%;
+    max-width: 300px;
     height: auto;
-    object-fit: cover;
+    padding-top: 1rem;
 }
 
 .article__call-to-action{
@@ -180,6 +181,7 @@
     font-family: var(--font-current-family);
     text-size: var(--font-size-normal);
     color: var(--color-secondary);
+    margin-bottom: 1rem;
 }
 
 .footer__list > li{
@@ -198,4 +200,6 @@
     font-family: var(--font-isotipo);
     color: var(--color-secundary);
     font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 0;
 }
