@@ -156,3 +156,26 @@
 .footer{
    background: var(--color-secondary);
 }
+
+.footer__title{
+    text-align: center;
+    font-family: var(--font-family-titles);
+    color: var(--color-normal-letters);
+    font-size: 2rem;
+    margin-bottom: 0;
+}    
+
+.footer_list{
+    font-family: var(--font-current-family);
+    text-size: var(--font-size-normal);
+}
+
+.footer_list > li{
+     padding-top: 1rem;
+     font-size: var(--font-size-normal);
+}
+
+.footer__link{
+    color: var(--color-secondary);
+    font-size: var(--font-size-normal);
+}
