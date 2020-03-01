@@ -120,6 +120,8 @@ body{
     font-size: var(--font-size-normal);
     color: var(--color-normal-letters);
     white-space: pre-line;
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 
 .article__list{
@@ -205,5 +207,6 @@ body{
     color: var(--color-secundary);
     font-size: 1.5rem;
     text-align: center;
+    padding-top: 1rem; 
     margin-bottom: 0;
 }
