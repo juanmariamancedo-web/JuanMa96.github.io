@@ -138,10 +138,14 @@ body{
     color: var(--color-normal-letters);
 }
 
-.article__img{
+.article_img-containt{
     flex: 1 1 300px;
+}
+
+.article__img{
     height: auto;
     padding-top: 1rem;
+    object-fit. containt;
 }
 
 .article__call-to-action{
