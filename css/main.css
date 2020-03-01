@@ -129,7 +129,6 @@ body{
     font-family: var(--font-current-family);
     font-size: var(--font-size-normal);
     color: var(--color-normal-letters);
-    padding-left: 1rem;
     padding-right: 1rem;
 }
 
