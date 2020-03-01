@@ -143,9 +143,10 @@ body{
 }
 
 .article__img{
+    width: 100%;
     height: auto;
     padding-top: 1rem;
-    object-fit: containt;
+    object-fit: contain;
 }
 
 .article__call-to-action{
