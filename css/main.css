@@ -120,7 +120,7 @@ body{
     font-size: var(--font-size-normal);
     color: var(--color-normal-letters);
     white-space: pre-line;
-    margin-top: 1rem;
+    margin-botton: 1rem;
     padding-left: 1rem;
     padding-right: 1rem;
 }
@@ -142,12 +142,12 @@ body{
 
 .article__img-containt{
     flex: 1 1 375px;
+    margin-bottom: 1rem;
 }
 
 .article__img{
     width: 100%;
     height: auto;
-    padding-top: 1rem;
     object-fit: contain;
 }
 
