@@ -115,7 +115,7 @@ body{
 }
 
 .article__text{
-    flex: 1 1 300px;
+    flex: 1 1 375px;
     font-family: var(--font-current-family);
     font-size: var(--font-size-normal);
     color: var(--color-normal-letters);
@@ -125,10 +125,12 @@ body{
 }
 
 .article__list{
-    flex: 1 1 300px;
+    flex: 1 1 375px;
     font-family: var(--font-current-family);
     font-size: var(--font-size-normal);
     color: var(--color-normal-letters);
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 
 .article__list > li{
@@ -139,13 +141,14 @@ body{
 }
 
 .article__img-containt{
-    flex: 1 1 300px;
+    flex: 1 1 375px;
 }
 
 .article__img{
+    width: 100%;
     height: auto;
     padding-top: 1rem;
-    object-fit: containt;
+    object-fit: contain;
 }
 
 .article__call-to-action{
