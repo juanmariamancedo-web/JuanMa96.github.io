@@ -157,10 +157,10 @@
     text-decoration: none;
 }
 
-.article___link[href^="https://instagram"]::before{
+/*.article___link[href^="https://instagram"]::before{
     content: " ";
     background: center / contain, var(--color-principal);
-}
+}*/
 
 .footer{
     display: flex;
