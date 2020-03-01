@@ -3,6 +3,10 @@
     margin-top: 0;
 }
 
+body{
+    margin: 0;
+}
+
 :root{
     --color-normal-letters: 000;
     --color-letters-of-cover: #FFCA00;
