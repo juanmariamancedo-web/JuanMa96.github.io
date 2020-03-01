@@ -99,7 +99,7 @@ body{
     font-family: var(--font-family-titles);
     color: var(--color-normal-letters);
     font-size: 2rem;
-    margin-bottom: 0;
+    margin-bottom: 1rem;
 }
 
 .article__title--pregunta{
@@ -120,6 +120,7 @@ body{
     font-size: var(--font-size-normal);
     color: var(--color-normal-letters);
     white-space: pre-line;
+    margin-top: 1rem;
     padding-left: 1rem;
     padding-right: 1rem;
 }
@@ -133,7 +134,7 @@ body{
 }
 
 .article__list > li{
-    padding-top: 1rem;     
+    margin-bottom: 1rem;     
     font-family: var(--font-current-family);
     font-size: inherit;
     color: var(--color-normal-letters);
