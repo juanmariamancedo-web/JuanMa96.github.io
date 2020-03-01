@@ -113,7 +113,7 @@
 .article__text{
     flex: 1 1 300px;
     font-family: var(--font-current-family);
-    text-size: var(--font-size-normal);
+    font-size: var(--font-size-normal);
     color: var(--color-normal-letters);
     white-space: pre-line;
 }
@@ -121,14 +121,14 @@
 .article__list{
     flex: 1 1 300px;
     font-family: var(--font-current-family);
-    text-size: var(--font-size-normal);
+    font-size: var(--font-size-normal);
     color: var(--color-normal-letters);
 }
 
 .article__list > li{
     padding-top: 1rem;     
     font-family: var(--font-current-family);
-    text-size: var(--font-size-normal);
+    font-size: inherit;
     color: var(--color-normal-letters);
 }
 
