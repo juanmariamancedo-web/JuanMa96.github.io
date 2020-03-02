@@ -24,6 +24,7 @@ body{
     --font-family-titles: 'Oswald';
     --font-current-family: 'Open Sans';
     --font-isotipo: 'Lacquer';
+    --font-icon: 'jm-maquetador-web';
 
     --font-size-normal: 14pt;
 }
@@ -172,10 +173,10 @@ body{
     text-decoration: none;
 }
 
-/*.article___link[href^="https://instagram"]::before{
-    content: " ";
-    background: center / contain, var(--color-principal);
-}*/
+.article___link[href^="https://instagram"]::before{
+    font-family: var(--font-icon);
+    content: "a";
+}
 
 .footer{
     display: flex;
