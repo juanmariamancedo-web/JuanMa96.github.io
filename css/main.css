@@ -24,6 +24,7 @@ body{
     --font-family-titles: 'Oswald';
     --font-current-family: 'Open Sans';
     --font-isotipo: 'Lacquer';
+    --font-icon: 'jm-maquetador-web';
 
     --font-size-normal: 14pt;
 }
@@ -99,7 +100,7 @@ body{
     font-family: var(--font-family-titles);
     color: var(--color-normal-letters);
     font-size: 2rem;
-    margin-bottom: 0;
+    margin-bottom: 1rem;
 }
 
 .article__title--pregunta{
@@ -120,21 +121,25 @@ body{
     font-size: var(--font-size-normal);
     color: var(--color-normal-letters);
     white-space: pre-line;
+    margin-bottom: 1rem;
     padding-left: 1rem;
     padding-right: 1rem;
 }
 
+.article__conteiner-list{
+     flex: 1 1 375px;
+}
+
 .article__list{
-    flex: 1 1 375px;
+    max-width: 100%;
     font-family: var(--font-current-family);
     font-size: var(--font-size-normal);
     color: var(--color-normal-letters);
-    padding-left: 1rem;
     padding-right: 1rem;
 }
 
 .article__list > li{
-    padding-top: 1rem;     
+    margin-bottom: 1rem;     
     font-family: var(--font-current-family);
     font-size: inherit;
     color: var(--color-normal-letters);
@@ -142,12 +147,14 @@ body{
 
 .article__img-containt{
     flex: 1 1 375px;
+    margin-bottom: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem; 
 }
 
 .article__img{
     width: 100%;
     height: auto;
-    padding-top: 1rem;
     object-fit: contain;
 }
 
@@ -161,6 +168,7 @@ body{
      border-radius: 10px;
      text-decoration: none;
      text-align: center;
+     margin-bottom: 1rem;
 }
 
 .article__link{
@@ -169,10 +177,10 @@ body{
     text-decoration: none;
 }
 
-/*.article___link[href^="https://instagram"]::before{
-    content: " ";
-    background: center / contain, var(--color-principal);
-}*/
+.article___link[href^="https://instagram.com"]::before{
+    font-family: var(--font-icon);
+    content: "a";
+}
 
 .footer{
     display: flex;
@@ -191,7 +199,7 @@ body{
 
 .footer__list{
     font-family: var(--font-current-family);
-    text-size: var(--font-size-normal);
+    font-size: var(--font-size-normal);
     color: var(--color-secondary);
     margin-bottom: 1rem;
 }
