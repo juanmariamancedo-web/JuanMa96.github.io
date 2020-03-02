@@ -131,6 +131,7 @@ body{
 }
 
 .article__list{
+    max-width: 100%;
     font-family: var(--font-current-family);
     font-size: var(--font-size-normal);
     color: var(--color-normal-letters);
