@@ -126,8 +126,11 @@ body{
     padding-right: 1rem;
 }
 
+.article__conteiner-list{
+     flex: 1 1 375px;
+}
+
 .article__list{
-    flex: 1 1 375px;
     font-family: var(--font-current-family);
     font-size: var(--font-size-normal);
     color: var(--color-normal-letters);
