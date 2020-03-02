@@ -199,7 +199,7 @@ body{
 
 .footer__list{
     font-family: var(--font-current-family);
-    text-size: var(--font-size-normal);
+    font-size: var(--font-size-normal);
     color: var(--color-secondary);
     margin-bottom: 1rem;
 }
