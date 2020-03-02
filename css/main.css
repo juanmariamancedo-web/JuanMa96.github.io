@@ -173,7 +173,7 @@ body{
     text-decoration: none;
 }
 
-.article___link[href^="https://instagram"]::before{
+.article___link[href^="https://instagram.com"]::before{
     font-family: var(--font-icon);
     content: "a";
 }
