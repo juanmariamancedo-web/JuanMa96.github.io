@@ -141,7 +141,7 @@ body{
     color: var(--color-normal-letters);
 }
 
-.article__list:last-child{
+.article__list > li:last-child{
     margin-bottom: 0;
 }
 
