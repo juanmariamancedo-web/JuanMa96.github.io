@@ -2,11 +2,11 @@
 
 @font-face {
   font-family: "jm-maquetador-web";
-  src:url("fonts/jm-maquetador-web.eot");
-  src:url("fonts/jm-maquetador-web.eot?#iefix") format("embedded-opentype"),
-    url("fonts/jm-maquetador-web.woff") format("woff"),
-    url("fonts/jm-maquetador-web.ttf") format("truetype"),
-    url("fonts/jm-maquetador-web.svg#jm-maquetador-web") format("svg");
+  src:url("../fonts/jm-maquetador-web.eot");
+  src:url("../fonts/jm-maquetador-web.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/jm-maquetador-web.woff") format("woff"),
+    url("../fonts/jm-maquetador-web.ttf") format("truetype"),
+    url("../fonts/jm-maquetador-web.svg#jm-maquetador-web") format("svg");
   font-weight: normal;
   font-style: normal;
 
