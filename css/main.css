@@ -79,8 +79,12 @@ body{
      background-color: var(--color-letters-of-cover);
      border-radius: 10px;
      text-decoration: none;
-     text-align: center;
-     
+     text-align: center;  
+}
+
+.main-content__call-to-action::before{
+    font-family: var(--font-icon);
+    content: "c";
 }
 
 .article{ 
@@ -161,6 +165,12 @@ body{
      margin-bottom: 1rem;
 }
 
+.article__call-to-action::before{
+    font-family: var(--font-icon);
+    content: "c";
+    vertical-align: middle;
+}
+
 .article__link{
     color: var(--color-secondary);
     font-size: var(--font-size-normal);
@@ -203,9 +213,16 @@ body{
     font-size: var(--font-size-normal);
     color: var(--color-secondary);
     margin-bottom: 1rem;
+    list-style: none;
 }
 
 .footer__list > li{
+     padding-top: 1rem;
+     font-size: var(--font-size-normal);    
+     color: var(--color-secondary);
+}
+
+.footer__list > li:last-child{
      padding-top: 1rem;
      font-size: var(--font-size-normal);    
      color: var(--color-secondary);
@@ -215,6 +232,19 @@ body{
     color: var(--color-principal);
     font-size: var(--font-size-normal);
     text-decoration: none;
+}
+
+.footer__link::before{
+    font-family: var(--font-icon);
+    vertical-align: middle;
+}
+
+.footer__link[href^="mailto"]::before{
+    content: "b";
+}
+
+.footer__link[href^="tel"]::before{
+    content: "d";
 }
 
 .footer__isotipo{ 
