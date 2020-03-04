@@ -167,9 +167,20 @@ body{
     text-decoration: none;
 }
 
-.article__link[href^="https://www.instagram.com"]::before{
+.article__link::before{
     font-family: var(--font-icon);
+    vertical-align: middle;   
+}
+.article__link[href^="https://www.instagram.com"]::before{
     content: "a";
+}
+
+.article__link[href="https://chicoturbio.art.blog"]::before{
+    content: "e";
+}
+
+.article__link[href^="https://www.github.com"]::before{
+    content: "f";
 }
 
 .footer{
