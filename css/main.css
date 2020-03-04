@@ -250,9 +250,8 @@ body{
 
 .footer__isotipo{ 
     font-family: var(--font-isotipo);
-    color: var(--color-secundary);
+    color: var(--color-secondary);
     font-size: 1.5rem;
-    text-align: center;
-    padding-top: 1rem; 
-    margin-bottom: 0;
+    text-align: center; 
+    margin-bottom: 1rem;
 }
