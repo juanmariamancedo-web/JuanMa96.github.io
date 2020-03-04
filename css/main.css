@@ -156,7 +156,7 @@ body{
      display: block;
      width: 95%;
      font-family: var(--font-current-family);
-     color: var(--color-cover);
+     color: var(--color-principal);
      font-size: var(--font-size-normal);
      background-color: var(--color-letters-of-cover);
      border-radius: 10px;
