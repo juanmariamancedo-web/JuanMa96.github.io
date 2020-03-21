@@ -39,6 +39,12 @@ $0{
 
 :root{
    /*color*/
+   --color-1: #CDFF00; 
+   --color-2: #FFCA00; 
+   --color-3: #002A9D;
+   --color-4: #0074E8;
+   --color-5: #000000;
+   --color-6: #FFF;
 
    /*z-index*/
     --z-back: -10;
@@ -48,14 +54,15 @@ $0{
     --z-modal: 1000;
 
     /*fonts*/
-    --font-family-titles: ;
-    --font-family-normal: ;
-    --font-family-isotipo: ;
+    --font-family-title: "Oswald";
+    --font-family-normal: "Open Sans";
+    --font-family-isotipo: "Lacquer";
+    --font-icon: 'jm-maquetador-web';
 
     /*font´s size*/ 
     --font-size-title: 2rem;
     --font-size-normal: 14pt;
-    --font-size-isotipo: 1.5;
+    --font-size-isotipo: 1.5rem;
     
     /*space*/
     --space-relation: 1rem;
@@ -69,10 +76,10 @@ $0{
     justify-content: center;
     align-items: center;
 
-    whidth: 100%;
+    width: 100%;
     min-height: 2rem;
 
-    /*background: */
+    background-color: var(--color-6);
     
     z-index: var(--z-normal);
 }
@@ -83,17 +90,14 @@ $0{
     font-family: var(--font-family-isotipo);
     font-size: var(--font-size-isotipo);
 
-    /*color: */
+    color: var(--color-5);
 }
 
 .cover{
-    whidth: 100%;
+    width: 100%;
     height: auto;
- 
     margin-bottom: var(--space-noRelation);
-
-    background: url(./img/cover.jpg) no-repeat center / cover scroll border-box border-box;
-    
+    background: url(./../img/cover.jpg) no-repeat center / cover scroll border-box border-box, var(--color-3);
     z-index: var(--z-normal);
 }
 
@@ -116,14 +120,24 @@ $0{
     font-family: var(--font-family-title);
     font-size: var(--font-size-title);
 
-    /*color: */
+    color: var(--color-2);
+   
+    quotes: "¿" "?";
+}
+
+.main-content__title--pregunta::before{
+    content: open-quote;
+}
+
+.main-content__title--pregunta::after{
+    content: close-quote;
 }
 
 .main-content__call-to-action{
     width: 96%;    
     height: auto;
     
-    /*background: */
+    background-color: var(--color-2);
     
     border-radius: 10px;
 
@@ -131,8 +145,18 @@ $0{
     font-size: var(--font-size-normal);
 
     text-align: center;
+    text-decoration: none;
 
-    /*color: */
+    color: var(--color-4);
+}
+
+.main-content__call-to-action::before{
+    font-family: var(--font-icon);
+    vertical-align: middle;   
+}
+
+.main-content__call-to-action[href^="https://wa.me"]::before{
+    content: "c";
 }
 
 .article{
@@ -148,7 +172,7 @@ $0{
     
     margin-bottom: var(--space-noRelation);
 
-    /*background: */
+    background: var(--color-6);
     
     z-index: var(--z-normal);
 }
@@ -167,14 +191,24 @@ $0{
 
     text-align: center;
 
-    /*color: */
+    color: var(--color-5);
+
+    quotes: "¿" "?";
+}
+
+.article__title--pregunta::before{
+    content: open-quote;
+}
+
+.article__title--pregunta::after{
+    content: close-quote;
 }
 
 
 .article__call-to-action{
     flex: 96% 0 0;
     
-    /*background: */
+    background: var(--color-2);
     
     border-radius: 10px;
 
@@ -184,8 +218,18 @@ $0{
     font-size: var(--font-size-normal);
 
     text-align: center;
+    text-decoration: none;
 
-    /*color: */
+    color: var(--color-4);
+}
+
+.article__call-to-action::before{
+    font-family: var(--font-icon);
+    vertical-align: middle;   
+}
+
+.article__call-to-action[href^="https://wa.me"]::before{
+    content: "c";
 }
 
 .article > *:last-child, .article > *:last-child > *:last-child{
@@ -193,12 +237,15 @@ $0{
 }
 
 .article__conteiner{
+    display: flex;
+    flex-direction: column;
+    aling-items: center;
     flex: 375px 1 1;
 
     margin-bottom: 0;
     padding: 0 var(--space-relation);
 
-    /*background: */
+    background: var(--color-6);
     
     z-index: var(--z-normal);
 }
@@ -211,30 +258,53 @@ $0{
     width: 100%;
     height: auto;
     
-    /*background: */
+    background: inherit;
     
     z-index: var(--z-normal);
 
     font-family: var(--font-family-normal);
     font-size: var(--font-size-normal);
 
-    /*color: */
+    color: inherit; 
+
+    white-space: pre-line;
 }
 
 .article__link{
     font-family: var(--font-family-normal);
     font-family: var(--font-family-normal);
 
-    /*color: */
+    color: var(--color-4);
+
+    text-decoration: none;
 }
+
+.article__link::before{
+    font-family: var(--font-icon);
+    vertical-align: middle;   
+}
+.article__link[href^="https://www.instagram.com"]::before{
+    content: "a";
+}
+
+.article__link[href="https://chicoturbio.art.blog"]::before{
+    content: "e";
+}
+
+.article__link[href^="https://www.github.com"]::before{
+    content: "f";
+}
+
 
 .article__list{
     width: 100%;
     height: auto;
     
-    /*background: */
+    background: inherit;
     
     z-index: var(--z-normal);
+
+    color: inherit;
 }
 
 .article__list > li{
@@ -243,13 +313,16 @@ $0{
     z-index: var(--z-normal);
 
     font-family: var(--font-family-normal);
-    font-family: var(--font-size-normal);
-
-    /*color: */
+    font-size: var(--font-size-normal);
 }
 
 .article__list > li:last-child{
     margin-bottom: 0;
+}
+
+.article__img{
+    max-width: 100%;
+    height: auto;
 }
 
 .footer{
@@ -258,7 +331,7 @@ $0{
     width: 100%;
     height: auto;
 
-    /*background: */
+    background-color: var(--color-2);
     
     flex-direction: column;
     align-items: center;
@@ -281,13 +354,18 @@ $0{
     font-family: var(--font-family-title);
     font-size: var(--font-size-title);
 
-    /*color: */
+    color: var(--color-4);
 }
 
 .footer__list{
-    /*background: */
+    list-style: none;    
+
+    padding-left: 0;
+    background: inherit;
     
     z-index: var(--z-normal);
+
+    color: var(--color-5);
 }
 
 .footer__list > li{
@@ -300,12 +378,31 @@ $0{
 
     font-family: var(--font-family-normal);
     font-size: var(--font-size-normal);
-
-    /*color: */
 }
 
 .footer__list > li:last-child{
     margin-bottom: 0;
+    
+    text-align: center;
+}
+
+.footer__link{
+    text-decoration: none;
+    
+    color: var(--color-6);
+}
+
+.footer__link::before{
+    font-family: var(--font-icon);
+    vertical-align: middle;   
+}
+
+.footer__link[href^="tel:"]::before{
+    content: "d";
+}
+
+.footer__link[href^="mailto:"]::before{
+    content: "b";
 }
 
 .footer__isotipo{
@@ -314,5 +411,5 @@ $0{
     font-family: var(--font-family-isotipo);
     font-size: var(--font-size-isotipo);
 
-    /*color: */
+    color: var(--color-4);
 }
