@@ -193,7 +193,7 @@
 
                 <div class="article__conteiner">
 
-                    <img src="img/foto de perfil.png" itemprop="image" class="article__img" alt="Foto de perfil">
+                    <img data-src="img/foto de perfil.png" itemprop="image" class="article__img" alt="Foto de perfil">
 
                 </div>
 
@@ -250,6 +250,14 @@
         <link rel="stylesheet" href="css/main.css">
 
         <link rel="icon" href="favicon.ico" type="image/x-icon">
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lazy.js/0.5.1/lazy.min.js"></script>
+        
+        <script>
+            var bLazy = new Blazy({
+                selector: "img"
+            });
+        </script>
     </body>
 
 </html>
