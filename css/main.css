@@ -120,6 +120,8 @@ $0{
     font-family: var(--font-family-title);
     font-size: var(--font-size-title);
 
+    text-align: center;
+    
     color: var(--color-2);
    
     quotes: "¿" "?";
