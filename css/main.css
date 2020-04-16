@@ -24,10 +24,6 @@ $0{
            box-sizing: border-box;
 }
 
-.section{
-   z-index: var(--z-normal);
-}
-
 :root{
    /*color*/
    --color-1: #CDFF00; 
