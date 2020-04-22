@@ -1,19 +1,31 @@
+/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
+
 /*Forma de trabajar*/
 /*
 $0{
     display
     display derivados
+
     width
     height
+
     margin
     padding
+
     background
+
     border
+
     z-index
+
     transform
+
     transition
+
     font
+
     text
+
     color
 }
 */
@@ -22,6 +34,10 @@ $0{
    margin: 0;
    -webkit-box-sizing: border-box;
            box-sizing: border-box;
+}
+
+.section{
+   z-index: var(--z-normal);
 }
 
 :root{
@@ -226,12 +242,15 @@ $0{
 
 
 .article__call-to-action{
-    width: 96%;    
-    height: auto;
+    -webkit-box-flex: 96%;
+        -ms-flex: 96% 0 0px;
+            flex: 96% 0 0;
 
-    background-color: var(--color-2);
+    background: var(--color-2);
 
     border-radius: 10px;
+
+    z-index: var(--z-normal);    
 
     font-family: var(--font-family-normal);
     font-size: var(--font-size-normal);
