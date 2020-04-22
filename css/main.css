@@ -226,15 +226,12 @@ $0{
 
 
 .article__call-to-action{
-    -webkit-box-flex: 96%;
-        -ms-flex: 96% 0 0px;
-            flex: 96% 0 0;
+    width: 96%;    
+    height: auto;
 
-    background: var(--color-2);
+    background-color: var(--color-2);
 
     border-radius: 10px;
-
-    z-index: var(--z-normal);    
 
     font-family: var(--font-family-normal);
     font-size: var(--font-size-normal);
